@@ -46,7 +46,7 @@ namespace xxx\Wrappers {
             if (!$this->isConnected) {
                 $this->pdo = new PDO("mysql:host=$this->host2;dbname=$this->database", $this->username, $this->password);
             }else{
-                die('Ups, Something went Wrong!');
+                die('Ups, Something went wrong!');
             }
             
             return $this->pdo;

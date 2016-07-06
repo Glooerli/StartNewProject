@@ -9,7 +9,6 @@
 namespace xxx\Routers
 {
     //Link Router
-
     use xxx\Controllers\FrontPageController;
 
     class Router
@@ -17,10 +16,9 @@ namespace xxx\Routers
         public function route($uri)
         {
             //Mitgegebene URI der Variable Path zuweisen.
-            $path = $uri;
             
             //Link Routing und jeweiligen Controller zurück geben
-            switch ($path) {
+            switch ($uri) {
                 case '/':
                     return new FrontPageController();
                 default:
