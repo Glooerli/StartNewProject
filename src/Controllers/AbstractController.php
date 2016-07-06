@@ -40,7 +40,7 @@ namespace xxx\Controllers
         //Laded das HTML Template
         protected function loadTemplate()
         {
-            return $this->loadDom('/var/www/c2b/data/Pages/PageTemplate.html');
+            return $this->loadDom('/var/www/StartNewProject/data/Pages/PageTemplate.html');
         }
           
         //Ladet HTML Files

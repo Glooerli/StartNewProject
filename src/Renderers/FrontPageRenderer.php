@@ -28,7 +28,7 @@ namespace xxx\Renderers {
             $xpath->registerNamespace('html', "http://www.w3.org/1999/xhtml");
 
             $dom->appendChild($dom->importNode($template->documentElement, true));
-            //Added den Content der Seite in der Class main. 
+            //Added den Content der Seite in der Class content. 
             $this->add_content = $xpath->query('//html:div[@class="content"]')->item(0);
             $this->add_content->appendChild($dom->importNode($content->documentElement, true));
             return $dom->saveXML();

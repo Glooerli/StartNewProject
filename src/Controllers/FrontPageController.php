@@ -33,7 +33,7 @@ namespace xxx\Controllers {
         
         public function run()
         {
-            $this->pageContent = $this->loadDom('/var/www/c2b/data/Pages/FrontPageContent.html');
+            $this->pageContent = $this->loadDom('/var/www/StartNewProject/data/Pages/FrontPageContent.html');
             $this->template = $this->loadTemplate();
             $this->pageRenderer = new FrontPageRenderer();
 

@@ -9,6 +9,9 @@
 namespace xxx\Routers
 {
     //Link Router
+
+    use xxx\Controllers\FrontPageController;
+
     class Router
     {
         public function route($uri)
@@ -19,7 +22,7 @@ namespace xxx\Routers
             //Link Routing und jeweiligen Controller zurück geben
             switch ($path) {
                 case '/':
-                    return new Controller;
+                    return new FrontPageController();
                 default:
                     echo 'error';
             }
